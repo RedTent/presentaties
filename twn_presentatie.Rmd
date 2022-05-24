@@ -1,0 +1,155 @@
+---
+title: "*twn*<br><br> Een R package voor de TWN-lijst"
+#subtitle: "⚔<br/>with xaringan"
+author: "Johan van Tent"
+#institute: "Hoogheemraadschap <br>van Schieland en de Krimpenerwaard"
+date: "2 juni 2022"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+library(twn)
+```
+
+class: center, middle, inverse
+
+# Wat is de TWN-lijst?
+
+---
+
+class: center, middle, inverse
+
+# Wat is R?
+
+---
+
+layout: true
+
+class: inverse
+
+---
+
+# TWN opzoekfuncties
+
+### `twn_localname()`
+
+```{r}
+# Nederlandse naam
+twn_localname(c("Bufo bufo", "Bufo calamita"))
+```
+--
+
+### `twn_voorkeurnaam()`
+
+```{r}
+# Opzoeken van de voorkeursnaam
+
+twn_voorkeurnaam(c("Bufo bufo", "Bufo calamita"))
+```
+
+--
+
+En ook:<br> `twn_taxonlevel() twn_status(), twn_taxontype(), twn_parent()`
+
+---
+
+# Verhogen taxonomisch niveau
+
+
+```{r}
+# Bijv. Zannichellia's
+
+namen <- c(
+  "Zannichellia palustris ssp. palustris",
+  "Zannichellia palustris[1]")
+```
+
+--
+
+###`increase_taxonlevel()`
+
+--
+
+```{r}
+increase_taxonlevel(namen, taxonlevel = "Species")
+```
+
+---
+
+# Vergelijken met referentielijst
+
+
+```{r}
+referentielijst_KRW <- c("Chara", "Elodea nuttallii")
+```
+
+--
+
+```{r}
+aangetroffen <-   c("Chara vulgaris", "Elodea nuttallii", 
+                    "Urtica dioica")
+```
+
+--
+
+### `match_parent()`
+
+--
+
+```{r}
+match_parent(taxa     = aangetroffen,
+             ref_taxa = referentielijst_KRW)
+```
+
+---
+
+# Onderliggende taxonomische niveau's
+
+### `twn_children()`
+
+--
+
+```{r}
+twn_children("Chara", taxonlevel = "Species")
+```
+
+
+---
+
+class: center, middle, inverse
+
+# Meer voorbeelden en uitleg op de website
+
+https://redtent.github.io/twn/
+
+```{r echo=FALSE}
+knitr::include_url("https://redtent.github.io/twn/")
+```
+
+---
+
+class: center, middle, inverse
+
+# Installeren twn
+
+```{r eval=FALSE}
+install.packages("twn")
+```
+
+---
+
+class: center, middle, inverse
+
+# Suggesties & bugs
+
+Welkom op https://github.com/RedTent/twn/issues
+
+
