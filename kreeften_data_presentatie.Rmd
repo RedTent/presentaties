@@ -1,0 +1,67 @@
+---
+title: "Dataset Amerikaanse rivierkreeften"
+#subtitle: "⚔<br/>with xaringan"
+author: "Johan van Tent"
+#institute: "Hoogheemraadschap <br>van Schieland en de Krimpenerwaard"
+date: "2 juni 2022"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+
+layout: true
+
+class: inverse
+
+---
+
+class: center, middle, inverse
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+# library(twn)
+```
+
+# Problematiek
+
+
+```{r echo=FALSE}
+knitr::include_url("https://player.bnnvara.nl/?id=581633")
+```
+
+---
+
+# Rapportage HHSK
+
+<https://www.schielandendekrimpenerwaard.nl/kaart/waterkwaliteit/waterkwaliteitsrapportages/kreeften_2021/>
+
+```{r echo=FALSE}
+knitr::include_url("https://www.schielandendekrimpenerwaard.nl/kaart/waterkwaliteit/waterkwaliteitsrapportages/kreeften_2021/")
+```
+
+---
+
+# Toelichting dataset
+
+- Kreeften
+  - 12 beaasde korven, 100 m, 1 nacht (vg. macrofauna)
+- Planten
+  - 50 m, alle plantensoorten, indien mogelijk tot op soortniveau
+  - bedekking uitgedrukt tov gehele wateroppervlak (geen zones)
+  - aanvullende info o.a. bedekkingen per bedekkingslaag
+- Informatie over de meetpunten
+
+
+---
+
+# Ideeën voor data-analyse
+
+- Inzichtelijk maken van de kreeftensituatie
+- Vergelijking situatie 2020 en 2021
+- Relatie tussen kreeften en waterplanten
+- Relatie tussen kreeften en omgevingsfactoren
