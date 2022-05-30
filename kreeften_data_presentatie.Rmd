@@ -27,7 +27,7 @@ options(htmltools.dir.version = FALSE)
 # library(twn)
 ```
 
-# Problematiek
+# Problematiek kreeften
 
 
 ```{r echo=FALSE}
@@ -50,18 +50,34 @@ knitr::include_url("https://www.schielandendekrimpenerwaard.nl/kaart/waterkwalit
 
 - Kreeften
   - 12 beaasde korven, 100 m, 1 nacht (vg. macrofauna)
+  
 - Planten
   - 50 m, alle plantensoorten, indien mogelijk tot op soortniveau
   - bedekking uitgedrukt tov gehele wateroppervlak (geen zones)
   - aanvullende info o.a. bedekkingen per bedekkingslaag
-- Informatie over de meetpunten
 
+- Informatie over de meetpunten, o.a.
+  - bodemtype
+  - landgebruik
+
+
+---
+
+
+class: center, middle, inverse
+
+Link naar de dataset:
+
+<https://github.com/CopEDA/kreeften_2_juni_2022/raw/main/data_kreeften_vegetatie_HHSK_CoP_Ecodata%202-6-2022.xlsx>
 
 ---
 
 # Ideeën voor data-analyse
 
 - Inzichtelijk maken van de kreeftensituatie
+
 - Vergelijking situatie 2020 en 2021
+
 - Relatie tussen kreeften en waterplanten
+
 - Relatie tussen kreeften en omgevingsfactoren
