@@ -61,14 +61,6 @@ knitr::include_url("https://www.schielandendekrimpenerwaard.nl/kaart/waterkwalit
   - landgebruik
 
 
----
-
-
-class: center, middle, inverse
-
-Link naar de dataset:
-
-<https://github.com/CopEDA/kreeften_2_juni_2022/raw/main/data_kreeften_vegetatie_HHSK_CoP_Ecodata%202-6-2022.xlsx>
 
 ---
 
@@ -81,3 +73,12 @@ Link naar de dataset:
 - Relatie tussen kreeften en waterplanten
 
 - Relatie tussen kreeften en omgevingsfactoren
+
+---
+
+
+class: center, middle, inverse
+
+Link naar de dataset:
+
+<https://github.com/CopEDA/kreeften_2_juni_2022/raw/main/data_kreeften_vegetatie_HHSK_CoP_Ecodata%202-6-2022.xlsx>
